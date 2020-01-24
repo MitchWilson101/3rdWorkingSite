@@ -29,6 +29,26 @@
   background-color: #333;
 }
 
+.bg-main {
+  background: #ffbb00;
+  color: set-text-color(#ffbb00);
+}
+
+.bg-dark {
+  background: #333;
+  color: set-text-color(#333);
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: set-text-color(#f4f4f4);
+}
+
+.bg-medium {
+  background: #ccc;
+  color: set-text-color(#ccc);
+}
+
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
@@ -183,7 +203,9 @@ img {
 }
 
 #header-inner {
-  text-align: center;
+  background: url("../dist/img/castleshowcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbb00;
 }
 
 #home-a .specials {
@@ -252,6 +274,7 @@ img {
   right: 0;
   font-size: 28px;
   background: #ffbb00;
+  color: #fff;
   border-radius: 50%;
   height: 15px;
   width: 15px;
@@ -284,6 +307,54 @@ img {
 
 #home-c .process-icon:hover .process-step {
   background: #333;
+  color: #fff;
+}
+
+#about-a .about-info {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  grid-gap: 1.2rem;
+}
+
+#about-a .bio-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bioimage;
+}
+
+#about-a .bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bio;
+  border-left: 3px solid #ffbb00;
+  padding: 0.8rem;
+}
+
+#about-a .awards-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: aw1;
+}
+
+#about-a .awards-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: aw2;
+}
+
+#about-a .awards-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: aw3;
+}
+
+#about-a .awards-1 .fas,
+#about-a .awards-2 .fas,
+#about-a .awards-3 .fas {
+  color: #ffbb00;
+  margin: 1rem;
 }
 
 #main-footer {
