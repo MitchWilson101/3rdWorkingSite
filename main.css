@@ -656,6 +656,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    opacity: 0.5;
   }
   #main-nav li {
     padding: 1rem;
